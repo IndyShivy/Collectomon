@@ -9,9 +9,9 @@ android {
     defaultConfig {
         applicationId "com.indyus.collectomon"
         minSdk 28
-        targetSdk 34
-        versionCode 12
-        versionName "4.8"
+        targetSdk 36
+        versionCode 13
+        versionName "4.9"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -22,8 +22,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            // Enable code coverage for debug builds
-            testCoverageEnabled true
+            enableUnitTestCoverage true
+            enableAndroidTestCoverage true
         }
     }
     compileOptions {
